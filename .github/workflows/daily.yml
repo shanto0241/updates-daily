@@ -3,7 +3,7 @@ name: Daily Commit
 on:
   schedule:
     # Runs every day at a random minute between 0-59 of 0 UTC
-    - cron: '${{ 0 }} $((RANDOM % 24)) * * *'
+    - cron: '0 12 * * *' 
   workflow_dispatch:
 
 permissions:
